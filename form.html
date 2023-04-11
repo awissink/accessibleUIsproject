@@ -6,12 +6,14 @@
             <a href="index.html">Home</a>
             <a href="form.html">Form</a>
             <a href="additionalInfo.html">Additional Resources</a>
-    
-    
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="jquery.cookie.js"></script>
+            <script src="script.js"></script>
+            <script src="script1.js"></script>
     </head>
 <body>
+    <form action="" id="survey">
     <p>What type of application are you looking to build?</p>
-    <form>
         <input type="radio" id="webapp" name="appType" value="WEBAPP">
         <label for="webapp">Web application</label><br>
         <input type="radio" id="ios" name="appType" value="IOS">
@@ -20,9 +22,7 @@
         <label for="androidapp">Android application</label><br>
         <input type="radio" id="browserextension" name="appType" value="BROWSEREXTENSION">
         <label for="browserextension">Browser Extension</label>
-    </form>
     <p>What is the age demographic of your application?</p>
-    <form>
         <input type="checkbox" id="ageGroup1" name="ageGroup1" value="0 -10">
         <label for="ageGroup1"> 0 - 10</label><br>
         <input type="checkbox" id="ageGroup2" name="ageGroup2" value="10 - 18">
@@ -33,18 +33,14 @@
         <label for="ageGroup4"> 40 - 60 </label><br>
         <input type="checkbox" id="ageGroup5" name="ageGroup5" value="60+">
         <label for="ageGroup5"> 60+ </label>
-    </form>
     <p>Are you specifically designing your application for any of the following groups of people? </p>
-    <form>
         <input type="checkbox" id="group1" name="group1" value="Visually impaired people">
         <label for="group1"> Visually impaired people </label><br>
         <input type="checkbox" id="group2" name="group2" value="Deaf/hard-of-hearing people">
         <label for="group2"> Deaf/hard-of-hearing people  </label><br>
         <input type="checkbox" id="group3" name="group3" value="Neurodivergent people">
         <label for="group3"> Neurodivergent people </label><br>
-    </form>
     <p>What is the product area that your application focuses on?</p>
-    <form>
         <input type="radio" id="socialnetworking" name="productArea" value="socialNetworking">
         <label for="socialnetworking">Social networking</label><br>
         <input type="radio" id="gaming" name="productArea" value="Gaming">
@@ -61,9 +57,7 @@
         <label for="shopping">Shopping</label><br>
         <input type="radio" id="other" name="productArea" value="Other">
         <label for="other">Other</label><br>
-    </form>
     <p>How much do you already know about developing accessible applications?</p>
-    <form>
         <input type="radio" id="nothingatall" name="accessibilityKnowledge" value="nothingAtAll">
         <label for="nothingatall">Nothing at all </label><br>
         <input type="radio" id="alittlebit" name="accessibilityKnowledge" value="aLittleBit">
@@ -72,6 +66,7 @@
         <label for="adecentamount">A decent amount</label><br>
         <input type="radio" id="expert" name="accessibilityKnowledge" value="Expert">
         <label for="expert">I'm an expert</label><br>
+    <button type="submit" id="submit">Submit</button>
     </form>
 </body>
 </html>
