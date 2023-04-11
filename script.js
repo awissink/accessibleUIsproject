@@ -25,7 +25,7 @@ $(document).ready(function() {
             if (valid) {
                 getData(form);
                 getResources();
-                window.location.href = "./resources.html"
+                window.location.href = "./resources.html";
                 displayResources();
             }
         });
@@ -36,7 +36,9 @@ $(document).ready(function() {
             for (i in allResourceIds) {
                 var resourceName = allResourceIds[i];
                 var resourcesToShow = document.getElementById(resourceName);
-                resourcesToShow.style.display = "none";
+                if (resourcesToShow) {
+                    resourcesToShow.style.display = "none";
+                }
             }
             reset();
             window.location.href = "./form.html"
