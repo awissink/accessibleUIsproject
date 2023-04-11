@@ -2,6 +2,7 @@ $(document).ready(function() {
 
     var goBackBtn = document.getElementById("goback");
     var theResources = $.cookie("resources");
+    theResources = JSON.parse(theResources);
     var theData = $.cookie("data");
 
     console.log(theResources);

@@ -7,3 +7,63 @@ ul {
 .resources {
   display: none;
 }
+
+#webappresources {
+  display: none;
+}
+
+#iosresources {
+  display: none;
+}
+
+#androidresources {
+  display: none;
+}
+
+#extensionresources {
+  display: none;
+}
+
+#olderpeopleresources {
+  display: none;
+}
+
+#visuallyimpairedresources {
+  display: none;
+}
+
+#deafresources {
+  display: none;
+}
+
+#neuroresources {
+  display: none;
+}
+
+#socialresources {
+  display: none;
+}
+
+#gamingresources {
+  display: none;
+}
+
+#educationresources {
+  display: none;
+}
+
+#travelresources {
+  display: none;
+}
+
+#entertainmentresources {
+  display: none;
+}
+
+#newsresources {
+  display: none;
+}
+
+#shoppingresources {
+  display: none;
+}
