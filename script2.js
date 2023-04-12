@@ -5,9 +5,6 @@ $(document).ready(function() {
     theResources = JSON.parse(theResources);
     var theData = $.cookie("data");
 
-    console.log(theResources);
-    console.log(theData);
-
     displayResources();
 
     if (goBackBtn) {
@@ -36,7 +33,6 @@ $(document).ready(function() {
         // Loop through all resources and add them to the HTML page
         for (i in theResources) {
             var resourceName = theResources[i];
-            console.log(resourceName);
             var resourcesToShow = document.getElementById(resourceName);
             resourcesToShow.style.display = "block";
         }
