@@ -9,7 +9,7 @@ $(document).ready(function() {
     if (submitBtn) {
         form.addEventListener("submit", (e) => {
             e.preventDefault();
-    
+
             // Validate form input
             let valid = true;
             // TODO: loop through questions and ensure there is input for all
@@ -23,10 +23,9 @@ $(document).ready(function() {
 
     function getData(form) {
         var formData = new FormData(form);
-    
+
         // Get form data and store in a dictionary
-        for (const [name,value] of formData) {
-            console.log(name, value);
+        for (const [name, value] of formData) {
             theData[name] = value;
         }
         $.cookie("data", JSON.stringify(theData));
@@ -38,52 +37,37 @@ $(document).ready(function() {
             if (key == "appType") {
                 if (value == "WEBAPP") {
                     theResources.push("webappresources");
-                }
-                else if (value == "IOS") {
+                } else if (value == "IOS") {
                     theResources.push("iosresources");
-                }
-                else if (value == "ANDROIDAPP") {
+                } else if (value == "ANDROIDAPP") {
                     theResources.push("androidresources");
-                }
-                else if (value == "BROWSEREXTENSION") {
+                } else if (value == "BROWSEREXTENSION") {
                     theResources.push("extensionresources");
                 }
-            }
-            else if (key == "ageGroup5") {
+            } else if (key == "ageGroup5") {
                 theResources.push("olderpeopleresources");
-            }
-            else if (key == "group1") {
+            } else if (key == "group1") {
                 theResources.push("visuallyimpairedresources");
-            }
-            else if (key == "group2") {
+            } else if (key == "group2") {
                 theResources.push("deafresources");
-            }
-            else if (key == "group3") {
+            } else if (key == "group3") {
                 theResources.push("neuroresources");
-            }
-            else if (key == "productArea") {
+            } else if (key == "productArea") {
                 if (value == "socialNetworking") {
                     theResources.push("socialresources");
-                }
-                else if (value == "Gaming") {
+                } else if (value == "Gaming") {
                     theResources.push("gamingresources");
-                }
-                else if (value == "Education") {
+                } else if (value == "Education") {
                     theResources.push("educationresources");
-                }
-                else if (value == "travelLeisure") {
+                } else if (value == "travelLeisure") {
                     theResources.push("travelresources");
-                }
-                else if (value == "Entertainment") {
+                } else if (value == "Entertainment") {
                     theResources.push("entertainmentresources");
-                }
-                else if (value == "News") {
+                } else if (value == "News") {
                     theResources.push("newsresources");
-                }
-                else if (value == "Shopping") {
+                } else if (value == "Shopping") {
                     theResources.push("shoppingresources");
                 }
-                // TODO: handle other
             }
         }
         $.cookie("resources", JSON.stringify(theResources));

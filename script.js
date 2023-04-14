@@ -6,4 +6,8 @@ let data = {};
 let resources = [];
 
 // Stores div IDs for all resources (for bookkeeping purposes)
-let allResourceIds = ["webappresources", "iosresources", "androidresources", "extensionresources", "olderpeopleresources", "visuallyimpairedresources", "deafresources", "neuroresources", "socialresources", "gamingresources", "educationresources", "travelresources", "entertainmentresources", "newsresources", "shoppingresources"];
+let allResourceIds = ["webappresources", "iosresources", "androidresources", "extensionresources",
+    "olderpeopleresources", "visuallyimpairedresources", "deafresources", "neuroresources",
+    "socialresources", "gamingresources", "educationresources", "travelresources",
+    "entertainmentresources", "newsresources", "shoppingresources"
+];
