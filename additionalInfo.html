@@ -1,16 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <div class = "content">
     <link rel="stylesheet" href="style.css">
     <h1>Additional Resources</h1>
+    <button class="button">
         <a href="index.html">Home</a>
+    </button>
+    <button class="button">
         <a href="form.html">Form</a>
+    </button>
+    <button class="button">
         <a href="additionalInfo.html">Additional Resources</a>
+    </button>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="project2.js"></script>
+    </div>      
 </head>
 <body>
-    <p>resources</p>
+    
+    <div class = "content">
+    <img src="images/AccessibilityImage.png" alt="icons representing different forms of accessibility" style="width:500px"> 
+    <div class = "resourceBoxes"  style="background-color:green;">
+        <h3>For web applications: https://www.w3.org/WAI/tips/developing/</h3>
+        <p>This page introduces some basic considerations to help you get started developing web content that is more accessible to people with disabilities. These tips are good practice to help you meet Web Content Accessibility Guidelines (WCAG) requirements. Follow the links to the related WCAG requirements, detailed background in the “Understanding” document, guidance from Tutorials, user stories, and more.</p>
+    </div>
+    <div class = "resourceBoxes"  style="background-color:palevioletred;">
+        <h3>For iOS applications, tips directly from apple developer: 
+            https://developer.apple.com/accessibility/
+            <a href="https://developer.apple.com/documentation/accessibility/integrating_accessibility_into_your_app">Link</a>
+            
+            </h3>
+            <p>Here, find tips on how to code accessibility features with iOS. With built-in accessibility features, accessibility APIs, and developer tools, Apple operating systems provide extraordinary opportunities to deliver high-quality experiences to everyone, including people with disabilities. Take advantage of VoiceOver — the revolutionary screen reader for blind and low-vision users — Switch Control, Guided Access, Text to Speech, closed‑captioned or audio‑described video, and more.</p>
+    </div>
+    <div class = "resourceBoxes" style="background-color: #006ee6" >
+        <h3>For android applications: https://developer.android.com/guide/topics/ui/accessibility</h3>
+        <p>This resource will teach you how to build accessible apps on Android. Learn about color contrast, touch target size, content labeling, and other practices that make a big difference to your users. Also, here you can check out samples that demonstrate best practices for implementing accessible Android apps.</p>
+    </div>
+    </div>
 
 </body>
 </html>
