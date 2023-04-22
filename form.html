@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <link rel="stylesheet" href="style.css">
+        <title>Form</title>
+
         <br>
         <center>
             <h1 style = "font-family:Arial, Helvetica, sans-serif; font-size: 16;">Accessible Software Engineering Questionnaire</h1>
@@ -29,9 +31,11 @@
 
     <div class = "content">
     <img src="images/illustration-accessibility-1.png" alt="Man looking at different icons that represent senses" style="width:500px"> 
-    <h3>Don't know how to get started with coding an accessible feature/application/extension? Fill out our form to get tailored resources:</h3>
+    <h2>Don't know how to get started with coding an accessible feature/application/extension? Fill out our form to get tailored resources:</h2>
     <form action="" id="survey">
-    <p>What type of application are you looking to build?</p>
+
+    <fieldset>
+        <legend>What type of application are you looking to build?</legend>
         <input type="radio" id="webapp" name="appType" value="WEBAPP">
         <label for="webapp">Web application</label><br>
         <input type="radio" id="ios" name="appType" value="IOS">
@@ -40,7 +44,10 @@
         <label for="androidapp">Android application</label><br>
         <input type="radio" id="browserextension" name="appType" value="BROWSEREXTENSION">
         <label for="browserextension">Browser Extension</label>
-    <p>What is the age demographic of your application?</p>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>What is the age demographic of your application?</legend>
         <input type="checkbox" id="ageGroup1" name="ageGroup1" value="0 -10">
         <label for="ageGroup1"> 0 - 10</label><br>
         <input type="checkbox" id="ageGroup2" name="ageGroup2" value="10 - 18">
@@ -51,14 +58,21 @@
         <label for="ageGroup4"> 40 - 60 </label><br>
         <input type="checkbox" id="ageGroup5" name="ageGroup5" value="60+">
         <label for="ageGroup5"> 60+ </label>
-    <p>Are you specifically designing your application for any of the following groups of people? </p>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Are you specifically designing your application for any of the following groups of people?</legend>
         <input type="checkbox" id="group1" name="group1" value="Visually impaired people">
         <label for="group1"> Visually impaired people </label><br>
         <input type="checkbox" id="group2" name="group2" value="Deaf/hard-of-hearing people">
         <label for="group2"> Deaf/hard-of-hearing people  </label><br>
         <input type="checkbox" id="group3" name="group3" value="Neurodivergent people">
         <label for="group3"> Neurodivergent people </label><br>
-    <p>What is the product area that your application focuses on?</p>
+    </fieldset>
+    <br>
+
+    <fieldset>
+        <legend>What is the product area that your application focuses on?</legend>
         <input type="radio" id="socialnetworking" name="productArea" value="socialNetworking">
         <label for="socialnetworking">Social networking</label><br>
         <input type="radio" id="gaming" name="productArea" value="Gaming">
@@ -68,14 +82,19 @@
         <input type="radio" id="travelleisure" name="productArea" value="travelLeisure">
         <label for="travelleisure">Travel/leisure</label><br>
         <input type="radio" id="entertainment" name="productArea" value="Entertainment">
-        <label for="browserextension">Entertainment</label><br>
+        <label for="entertainment">Entertainment</label><br>
         <input type="radio" id="news" name="productArea" value="News">
         <label for="news">News</label><br>
         <input type="radio" id="shopping" name="productArea" value="Shopping">
         <label for="shopping">Shopping</label><br>
         <input type="radio" id="other" name="productArea" value="Other">
         <label for="other">Other</label><br>
-    <p>How much do you already know about developing accessible applications?</p>
+    </fieldset>
+    <br>
+
+
+    <fieldset>
+        <legend>How much do you already know about developing accessible applications?</legend>
         <input type="radio" id="nothingatall" name="accessibilityKnowledge" value="nothingAtAll">
         <label for="nothingatall">Nothing at all </label><br>
         <input type="radio" id="alittlebit" name="accessibilityKnowledge" value="aLittleBit">
@@ -84,6 +103,8 @@
         <label for="adecentamount">A decent amount</label><br>
         <input type="radio" id="expert" name="accessibilityKnowledge" value="Expert">
         <label for="expert">I'm an expert</label><br>
+    </fieldset>
+    <br>
     <button type="submit" id="submit">Submit</button>
     </form>
 </div>
