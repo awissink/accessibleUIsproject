@@ -12,7 +12,6 @@ $(document).ready(function() {
 
             // Validate form input
             let valid = true;
-            // TODO: loop through questions and ensure there is input for all
             if (valid) {
                 getData(form);
                 getResources();
